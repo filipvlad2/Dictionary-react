@@ -5,7 +5,6 @@ function Add({parentToChild}) {
 		console.log(parentToChild);
 
 		let word = document.getElementById('addInput').value;
-		//wordsArray.push(word);
 
 		document.getElementById('dictionary').append(word + ", ");
 	}

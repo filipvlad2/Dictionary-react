@@ -14,7 +14,7 @@ function Search(props) {
 	return (
 		<div className="searchDiv">
 			<label>Search the word</label>
-			<input type="text" id="searchInput"></input>
+			<input type = "text" id = "searchInput"></input>
 			<button onClick={() => handleSearchClick()}>Search</button>
 		</div>
 	)

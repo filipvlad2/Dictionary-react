@@ -10,10 +10,10 @@ function Add(props) {
 	}
 
 	return (
-		<div className="addDiv">
+		<div className = "addDiv">
 			<label>Add the word</label>
-			<input type="text" id="addInput"></input>
-			<button onClick={() => handleAddClick()}>Add</button>
+			<input type = "text" id = "addInput"></input>
+			<button onClick = {() => handleAddClick()}>Add</button>
 		</div>
 	)
 }

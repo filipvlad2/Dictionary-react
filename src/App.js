@@ -9,13 +9,13 @@ function App() {
   let [alertMsg, setAlertMsg] = useState("");
 
   return (
-    <div className="App">
-      <div className="Content">
+    <div className = "App">
+      <div className = "Content">
         <h1>Dictionary</h1>
-        <Add setWordsList= {setWordsList}/>
-        <Search searchWordsList= {wordsList} setAlertMsg= {setAlertMsg} alertMsg= {alertMsg}/>
+        <Add setWordsList = {setWordsList}/>
+        <Search searchWordsList = {wordsList} setAlertMsg = {setAlertMsg} alertMsg = {alertMsg}/>
 
-        <div className="dictionary" id="dictionary">
+        <div className = "dictionary" id = "dictionary">
         </div>
         <p>{alertMsg}</p>
       </div>

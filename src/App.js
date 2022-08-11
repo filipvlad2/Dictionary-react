@@ -16,6 +16,7 @@ function App() {
         <Search searchWordsList = {wordsList} setAlertMsg = {setAlertMsg} alertMsg = {alertMsg}/>
 
         <div className = "dictionary" id = "dictionary">
+          {wordsList + ","}
         </div>
         <p>{alertMsg}</p>
       </div>

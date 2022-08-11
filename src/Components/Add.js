@@ -1,18 +1,19 @@
+import {useRef} from 'react';
+
 function Add(props) {
 
-	function handleAddClick() {
+	const ref = useRef(null);
 
-		let addedWord = document.getElementById("addInput").value;
+	function handleAddClick() {
+		let addedWord = ref.current.value;
 
 		props.setWordsList((currentWords) => [...currentWords, addedWord]);
-
-		document.getElementById("dictionary").innerHTML += addedWord + ", ";
 	}
 
 	return (
-		<div className = "addDiv">
+		<div className="addDiv">
 			<label>Add the word</label>
-			<input type = "text" id = "addInput"></input>
+			<input type = "text" id = "addInput" ref = {ref}></input>
 			<button onClick = {() => handleAddClick()}>Add</button>
 		</div>
 	)
